@@ -1,0 +1,27 @@
+{
+  "name": "docker-practice",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/churchie317/docker-practice.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/churchie317/docker-practice/issues"
+  },
+  "homepage": "https://github.com/churchie317/docker-practice#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "influx": "^5.0.7",
+    "util": "^0.10.3",
+    "winston": "^2.3.1"
+  }
+}
