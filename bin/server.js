@@ -13,6 +13,7 @@ influx.getDatabaseNames()
   .then(() => {
     app.listen(config.port, () => {
       winston.info(util.format(`server listening on port ${ config.port }`));
+      winston.info(util.format(`running in --${ process.env.NODE_ENV }`));
     });
   })
   .catch((err) => {
