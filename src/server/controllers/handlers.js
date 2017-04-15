@@ -15,7 +15,7 @@ exports.data = (req, res) => {
   };
   req.influx.writePoints([ data ]).then(() => {
     winston.info(req.body);
-    res.send(201);
+    res.sendStatus(201);
   }).catch((err) => {
     winston.error(err.message);
     res.sendStatus(500);
