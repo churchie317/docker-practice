@@ -1,5 +1,6 @@
 module.exports = {
   databaseOptions: {
+    database: 'iot',
     host: process.env.INFLUXDB_HOST,
     port: process.env.INFLUXDB_PORT,
     password: process.env.INFLUXDB_PASSWORD,
