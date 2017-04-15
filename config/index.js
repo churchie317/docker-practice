@@ -3,6 +3,7 @@ const influx = require('influx');
 const config = {
   port: process.env.PORT || 1337,
   databaseOptions: {
+    database: 'iot',
     port: 8086,
     schema: [
       {
