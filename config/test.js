@@ -1,6 +1,5 @@
 module.exports = {
   databaseOptions: {
-    host: 'db',
-    database: 'iot'
+    host: '192.168.99.100'
   }
 }

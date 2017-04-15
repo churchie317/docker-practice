@@ -4,12 +4,11 @@ services:
     image: influxdb
     environment:
       - INFLUXDB_ADMIN_ENABLED:true
-      - INFLUXDB_HOST:localhost
     ports:
       - 8083:8083
       - 8086:8086
   api:
-    image: echurchill/web-api:0.1.0
+    image: echurchill/iot-web-api:0.1.1
     ports:
       - 1337:1337
     links:
