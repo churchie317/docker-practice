@@ -1,7 +1,7 @@
-db:
+influx:
   image: influxdb
 sut:
   build: .
-  command: /bin/sh -c 'curl -i -XPOST http://db:8086/query --data-urlencode "q=CREATE DATABASE iot" && npm test'
+  command: /bin/sh -c 'curl -i -XPOST http://influx:8086/query --data-urlencode "q=CREATE DATABASE iot" && npm test'
   links:
-    - db
+    - influx

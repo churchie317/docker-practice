@@ -1,6 +1,6 @@
 module.exports = {
   databaseOptions: {
-    host: 'db',
+    host: 'influx',
     database: 'iot'
   }
 }

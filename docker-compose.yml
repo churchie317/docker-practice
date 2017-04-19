@@ -1,6 +1,10 @@
 version: "3.1"
 services:
-  db:
+  mongo:
+    image: mongo
+    ports:
+      - 27017:27017
+  influx:
     image: influxdb
     environment:
       - INFLUXDB_ADMIN_ENABLED:true
@@ -8,11 +12,12 @@ services:
       - 8083:8083
       - 8086:8086
   api:
-    image: echurchill/iot-web-api:0.1.1
+    image: echurchill/iot-web-api:0.1.3
     ports:
       - 1337:1337
     links:
-      - db
+      - mongo
+      - influx
   dashboard:
     image: grafana/grafana
     ports:

@@ -1,4 +1,4 @@
-db:
+influx:
   image: influxdb
   ports:
     - 8086:8086
